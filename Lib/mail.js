@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer')
-const destinatarios = require('./ListaCorreo')
+const destinatarios = require('./Config/ListaCorreo')
 
 let transporter = nodemailer.createTransport({
   service: 'Gmail',

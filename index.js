@@ -1,7 +1,7 @@
 'use stric'
-const tc = require('./getTasaCompra')
-const insertSQL = require('./Insertsql')
-const mail = require('./mail')
+const tc = require('./Lib/getTasaCompra')
+const insertSQL = require('./Lib/Insertsql')
+const mail = require('./Lib/mail')
 const schedule = require('node-schedule')
 const chalk = require('chalk')
 
