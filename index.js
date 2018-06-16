@@ -6,6 +6,7 @@ const schedule = require('node-schedule')
 const chalk = require('chalk')
 
 const rule = new schedule.RecurrenceRule()
+rule.hour = 24
 rule.second = 40
 
 schedule.scheduleJob(rule, function () {
@@ -37,4 +38,4 @@ function handleError (err) {
   mail.sendMail().then()
 }
 
-console.log(chalk.green(`🚀 Ejecuantado Aplicacion`))
+console.log(chalk.green(`🚀 Ejecuantado Aplicacion `))
