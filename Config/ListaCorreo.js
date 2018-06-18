@@ -1,7 +1,5 @@
 const MailingList = [
-  'julioemi@gmail.com',
-  'julioemi@icloud.com',
-  'julioemilio2003@yahoo.es'
+  'julioemi@icloud.com'
 ]
 
 module.exports = MailingList

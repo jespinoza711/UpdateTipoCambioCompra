@@ -6,8 +6,8 @@ const schedule = require('node-schedule')
 const chalk = require('chalk')
 
 const rule = new schedule.RecurrenceRule()
-rule.hour = 24
-rule.second = 40
+rule.hour = 6
+rule.second = 0
 
 schedule.scheduleJob(rule, function () {
   // Obtener el tipo de cambio
