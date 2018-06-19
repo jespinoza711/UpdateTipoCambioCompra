@@ -1,7 +1,7 @@
 const config = {
   user: 'sa',
-  password: 'admin911!',
-  server: '192.168.1.1', // You can use 'localhost\\instance' to connect to named instance
+  password: '***!',
+  server: '10.10.0.10', // You can use 'localhost\\instance' to connect to named instance
   database: 'EXACTUS',
   options: {
     encrypt: false // Use this if you're on Windows Azure

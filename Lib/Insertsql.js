@@ -1,5 +1,5 @@
 const sql = require('mssql')
-const config = require('./Config/config')
+const config = require('../Config/config')
 
 // Insertar los datos en la base de datos
 let InsertTCinDB = function (Valor) {
