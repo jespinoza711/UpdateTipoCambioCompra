@@ -9,21 +9,13 @@ const rule = new schedule.RecurrenceRule()
 rule.hour = 10
 rule.minute = 1
 
-// schedule.scheduleJob(rule, function () {
-<<<<<<< HEAD
-tc.get()
-  .then((res) => {
-    return insertSQL(res)
-  }).then()
-  .catch(handleError)
-=======
+schedule.scheduleJob(rule, function () {
   tc.get()
     .then((res) => {
       return insertSQL(res)
     }).then()
     .catch(handleError)
->>>>>>> f9cf3d5091d5473949ec9dc49196a921c0bc6785
-// })
+})
 
 function handleError (err) {
   console.log(chalk.red(`
