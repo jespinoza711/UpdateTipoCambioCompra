@@ -7,7 +7,7 @@ let InsertTCinDB = function (Valor) {
     sql.connect(config).then(pool => {
       let fecha = new Date()
       return pool.request()
-        .input('Valor', sql.Decimal(28, 4), 23)
+        .input('Valor', sql.Decimal(28, 4), Valor)
         .input('Fecha', sql.Date, fecha)
         .execute('fnica.usp_UpdateTipoCambioCompra')
     }).then(result => {

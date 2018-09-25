@@ -1,6 +1,6 @@
 const config = {
   user: 'sa',
-  password: '***!',
+  password: 'mufn2005.',
   server: '10.10.0.10', // You can use 'localhost\\instance' to connect to named instance
   database: 'EXACTUS',
   options: {
