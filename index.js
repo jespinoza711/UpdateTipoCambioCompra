@@ -6,17 +6,16 @@ const schedule = require('node-schedule')
 const chalk = require('chalk')
 
 const rule = new schedule.RecurrenceRule()
-rule.hour = 6
-rule.second = 0
+rule.hour = 10
+rule.minute = 1
 
-schedule.scheduleJob(rule, function () {
-  // Obtener el tipo de cambio
+// schedule.scheduleJob(rule, function () {
   tc.get()
     .then((res) => {
       return insertSQL(res)
-    })
+    }).then()
     .catch(handleError)
-})
+// })
 
 function handleError (err) {
   console.log(chalk.red(`
